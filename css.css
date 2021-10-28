@@ -1,0 +1,126 @@
+@font-face {
+font-family: 'fonts';
+src: url('fonts.ttf');
+}
+
+body {
+background-image: url(menu_background.jpg);
+}
+
+.Title {
+font-family: 'fonts';
+font-size: 70px;
+color: white;
+margin-left: 110px;
+margin-top: 110px;
+}
+
+.background {
+height: 100%;
+width: 100%;
+}
+
+.back_buttons {
+display: flex;
+flex-direction: row;
+width: 100%;
+height: 150px;
+}
+
+.back_cards {
+display: none;
+flex-direction: row;
+flex-wrap: wrap;
+align-items: center;
+background: white;
+border: solid 4px saddlebrown;
+width: 50%;
+height: 120px;
+}
+
+.dealer_cards {
+display: none;
+flex-direction: row;
+flex-wrap: wrap;
+align-items: center;
+background: white;
+border: solid 4px saddlebrown;
+width: 50%;
+height: 120px;
+margin-top: 30px;
+}
+
+.card {
+width: 70px;
+height: 100px;
+margin-left: 5px;
+border: solid 2px black;
+border-radius: 10%;
+}
+
+.start {
+font-family: cursive;
+font-size: 30px;
+width: 200px;
+height: 100px;
+background: FloralWhite;
+border: solid 2px black;
+box-shadow: 6px 6px 6px #999;
+margin-left: 50px;
+transition: background 0.05s linear;
+transition: all .05s linear;
+}
+
+.start:active {
+background: GhostWhite;
+box-shadow: 2px 2px 2px #777;
+transform: translateY(3px);
+}
+
+.take_card {
+display: none;
+font-family: cursive;
+font-size: 30px;
+width: 150px;
+height: 100px;
+background: FloralWhite;
+box-shadow: 6px 6px 6px #999;
+border: solid 2px black;
+transition: background 0.05s linear;
+transition: all .05s linear;
+}
+
+.take_card:active {
+background: GhostWhite;
+box-shadow: 2px 2px 2px #777;
+transform: translateY(3px);
+}
+
+.enough {
+display: none;
+font-family: cursive;
+font-size: 30px;
+width: 150px;
+height: 100px;
+background: FloralWhite;
+border: solid 2px black;
+box-shadow: 6px 6px 6px #999;
+margin-left: 20px;
+transition: background 0.05s linear;
+transition: all .05s linear;
+}
+
+.enough:active {
+background: GhostWhite;
+box-shadow: 2px 2px 2px #777;
+transform: translateY(3px);
+}
+
+.score_display {
+background: white;
+border: solid 4px saddlebrown;
+height: 96px;
+width: 146px;
+margin-left: 20px;
+}
+
