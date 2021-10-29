@@ -1,8 +1,8 @@
 function start() {
 
 const suits = ["Diamonds", "Spades", "Hearts", "Clubs"];
-const values = ['2', '3', '4', '5', '6', '7', '8', '9', '10', "Jack", "Queen", "King", "Ace"]
-const scores = [2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 11];
+const values = ["Ace", '2', '3', '4', '5', '6', '7', '8', '9', '10', "Jack", "Queen", "King"]
+const scores = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10];
 
 function create_card(suit, value, score) {
 return {
@@ -14,12 +14,13 @@ score: score
 
 function create_deck() {
 	var deck = [];
-	for (var i = 0; i < 4; i++) {
-   		for (var j = 0; j < 13; j++) {
-      		deck.push(create_card(suits[i], values[j], scores[j]));
+
+	for (let i = 0; i < 4; i++) {
+   		for (let j = 0; j < 13; j++) {
+      			deck.push(create_card(suits[i], values[j], scores[j]));
    		}
 	}
-	for (var i = 0; i < 1000; i++) {
+	for (let i = 0; i < 1000; i++) {
 		var x = Math.floor(Math.random() * 52);
 		var y = Math.floor(Math.random() * 52);
 		var temp = deck[x];
@@ -58,7 +59,7 @@ async function give_card() {
 		alert("You lost");
 	  	deck = create_deck();
 	  	current_score = 0;
-	  	score_display.innerHTML = `Current score: ${current_score}\nDealer's score: ${dealer_score}`;
+	  	score_display.innerHTML = `Current score: ${current_score}Dealer's score: ${dealer_score}`;
 	  	document.getElementById('back_cards').innerHTML = '';
 		document.getElementById('take_card').disabled = false;
 		document.getElementById('enough').disabled = false;
